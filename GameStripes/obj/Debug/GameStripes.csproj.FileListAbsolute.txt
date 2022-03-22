@@ -1,0 +1,12 @@
+C:\Users\Namxobick\source\repos\GameStripes\bin\Debug\GameStripes.exe.config
+C:\Users\Namxobick\source\repos\GameStripes\bin\Debug\GameStripes.exe
+C:\Users\Namxobick\source\repos\GameStripes\bin\Debug\GameStripes.pdb
+C:\Users\Namxobick\source\repos\GameStripes\obj\Debug\GameStripes.csproj.AssemblyReference.cache
+C:\Users\Namxobick\source\repos\GameStripes\obj\Debug\GameStripes.Properties.Resources.resources
+C:\Users\Namxobick\source\repos\GameStripes\obj\Debug\GameStripes.csproj.GenerateResource.cache
+C:\Users\Namxobick\source\repos\GameStripes\obj\Debug\GameStripes.csproj.CoreCompileInputs.cache
+C:\Users\Namxobick\source\repos\GameStripes\obj\Debug\GameStripes.exe
+C:\Users\Namxobick\source\repos\GameStripes\obj\Debug\GameStripes.pdb
+C:\Users\Namxobick\source\repos\GameStripes\obj\Debug\GameStripes.Form1.resources
+C:\Users\Namxobick\source\repos\GameStripes\obj\Debug\GameStripes.WinWindow.resources
+C:\Users\Namxobick\source\repos\GameStripes\obj\Debug\GameStripes.LoseWindow.resources

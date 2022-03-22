@@ -200,8 +200,8 @@ namespace GameStripes
         {
             int clickCount = 0, posX = 0, posY = 0;
             double clickAccuracy = 0;
-            if (clickCount != 0) clickAccuracy = ((_totalStrips - 1) - 2 * _startStripCount) / (double)clickCount * 100;
             SettingGameOver(ref clickCount, ref posX, ref posY);
+            if (clickCount != 0) clickAccuracy = ((_totalStrips - 1) - 2 * _startStripCount) / (double)clickCount * 100;
             _loseWindow = new LoseWindow(clickCount, _time / 1000.0, clickAccuracy, posX, posY);
             Controls.Add(_loseWindow);
             _loseWindow.WindowClose += WindowClose;
@@ -211,8 +211,8 @@ namespace GameStripes
         {
             int clickCount = 0, posX = 0, posY = 0;
             double clickAccuracy = 0;
-            if (clickCount != 0) clickAccuracy = _totalStrips / (double)clickCount * 100;
             SettingGameOver(ref clickCount, ref posX, ref posY);
+            if (clickCount != 0) clickAccuracy = _totalStrips / (double)clickCount * 100;
             _winWindow = new WinWindow(clickCount, _time / 1000.0, clickAccuracy, posX, posY);
             Controls.Add(_winWindow);
             _winWindow.WindowClose += WindowClose;

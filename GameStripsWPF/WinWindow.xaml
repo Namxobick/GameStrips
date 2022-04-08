@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="GameStripsWPF.WinWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GameStripsWPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="475" d:DesignWidth="380">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="#80acf2" HorizontalAlignment="Left" Height="475" Grid.RowSpan="2" Stroke="Black" VerticalAlignment="Top" Width="370" RadiusX="25" RadiusY="25"/>
+        <Image HorizontalAlignment="Left" Height="256" Grid.RowSpan="2" VerticalAlignment="Top" Width="370" Source="win.jpg">
+            <Image.Clip>
+                <RectangleGeometry RadiusX="20" RadiusY="20" Rect="0,0,370,300"/>
+            </Image.Clip>
+        </Image>
+        <Label Content="Mouse Click:" HorizontalAlignment="Left" Margin="10,277,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="169" FontFamily="Georgia" FontSize="24" FontWeight="Bold"/>
+        <Label Content="Time:" HorizontalAlignment="Left" Margin="10,319,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="169" FontFamily="Georgia" FontSize="24" FontWeight="Bold"/>
+        <Label Content="Accuracy:" HorizontalAlignment="Left" Margin="10,361,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="169" FontFamily="Georgia" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="_mouseClickLabel" Content="0" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="201,274,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="169" FontFamily="Georgia" FontSize="24" FontWeight="Bold" Background="{x:Null}"/>
+        <Label x:Name="_timeLabel" Content="0" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="201,314,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="169" FontFamily="Georgia" FontSize="24" FontWeight="Bold" Background="{x:Null}"/>
+        <Label x:Name="_accurasyLabel" Content="0" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="201,359,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="169" FontFamily="Georgia" FontSize="24" FontWeight="Bold" Background="{x:Null}"/>
+        <Button x:Name="_closeWindow" Content="Donate" Margin="140,424,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Height="41" FontFamily="Georgia" FontSize="24" Background="#FFDDDDDD" Click="_closeWindow_Click" HorizontalAlignment="Left" Width="99">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+
+    </Grid>
+</UserControl>

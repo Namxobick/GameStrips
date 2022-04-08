@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="GameStripsWPF.GameSettings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GameStripsWPF"
+             mc:Ignorable="d" MaxHeight="301" MaxWidth="251" MinHeight="301" Width="251">
+    
+    <Border  Background="#e4e8f7" BorderBrush="Black" BorderThickness="2" CornerRadius="15" MinWidth="251" MinHeight="301" MaxWidth="251" MaxHeight="301">
+        <Grid Height="301" Margin="-2,0,2,0">
+
+            <Label x:Name="_headerOfSettings" Content="Setting" Margin="72,10,72,251" RenderTransformOrigin="-0.105,0.5" FontSize="24" FontFamily="Georgia" FontWeight="Bold" Width="107" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40"/>
+            <Label x:Name="_widthStripeLabel" Content="Width:" HorizontalAlignment="Left" Margin="13,50,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="16"/>
+            <Label x:Name="_heightStripeLabel" Content="Height:" HorizontalAlignment="Left" Margin="13,85,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="16"/>
+            <Label x:Name="__startStripeCountLabel" Content="Start:" HorizontalAlignment="Left" Margin="13,120,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="16"/>
+            <Label x:Name="__numberOfSpawnStripeLabel" Content="Quantity:" HorizontalAlignment="Left" Margin="13,155,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="16"/>
+            <Label x:Name="_timeOfSpawnStripeLabel" Content="Frequency(ms):" HorizontalAlignment="Left" Margin="13,190,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="16"/>
+            <TextBox x:Name="_timeOfSpawnStripeTextBox" HorizontalAlignment="Left" Height="23" Margin="140,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" FontSize="18" FontFamily="Arial Black" SpellCheck.IsEnabled="True" TextAlignment="Center" FontWeight="Bold" Text="1000"/>
+            <TextBox x:Name="_numberOfSpawnStripeTextBox" HorizontalAlignment="Left" Height="23" Margin="140,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" FontSize="18" FontFamily="Arial Black" SpellCheck.IsEnabled="True" TextAlignment="Center" FontWeight="Bold" Text="1"/>
+            <TextBox x:Name="_startStripeCountTextBox" HorizontalAlignment="Left" Height="23" Margin="140,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" FontSize="18" FontFamily="Arial Black" SpellCheck.IsEnabled="True" TextAlignment="Center" FontWeight="Bold" Text="10"/>
+            <TextBox x:Name="_heightStripeTextBox" HorizontalAlignment="Left" Height="23" Margin="140,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" FontSize="18" FontFamily="Arial Black" SpellCheck.IsEnabled="True" TextAlignment="Center" FontWeight="Bold" Text="50"/>
+            <TextBox x:Name="_widthStripeTextBox" HorizontalAlignment="Left" Height="23" Margin="140,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" FontSize="18" FontFamily="Arial Black" SpellCheck.IsEnabled="True" TextAlignment="Center" FontWeight="Bold" Text="200"/>
+            <Button x:Name="_acceptingSettingsButton" Content="Accept" Margin="72,249,72,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="24" Background="White" BorderThickness="2">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+
+        </Grid>
+    </Border>
+</UserControl>
